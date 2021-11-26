@@ -8,8 +8,9 @@ Take this example below, how do we know that the Sudoku puzzle is solveable?
 ![image](https://user-images.githubusercontent.com/59411811/143574982-8458f39c-4582-438e-9653-b3b1fb0af3db.png)
 
 
+Unfortnately, there is no way of knowing that the user-generated Sudoku puzzles are valid before playing them. Of course, most websites will check the puzzles before accepting them, but for some websites this is not the case.
 
-Today, I decided to build a Sudoku solver to let me know if these puzzles are actually solvable before playing them. The code actually prints out the full Sudoku solution, but an added option allows for it to just let you know if it is solvable without ruining the fun. 
+So, today I decided to build a Sudoku solver to let me know if these puzzles are actually solvable before playing them. The code actually prints out the full Sudoku solution, but an added option allows for it to just let you know if it is solvable without ruining the fun. 
 
 This was created in C++, for the simple fact that I recently started learning C++ and wanted to improve. 
 
