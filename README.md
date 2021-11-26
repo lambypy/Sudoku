@@ -1,4 +1,4 @@
-# Sudoku
+# Sudoku Solver
 
 Over the past few years, I have occasionally played Sudoku, whether it is through local newspapers or online. Repetition allowed me to complete medium puzzles in a quick time, and knowledge of patterns and techniques pushed me into completing hard puzzles. You can find a link here for daily puzzles to complete:
 https://www.nytimes.com/puzzles/sudoku/easy
