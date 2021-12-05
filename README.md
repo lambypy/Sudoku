@@ -17,3 +17,10 @@ This was created in C++, for the simple fact that I recently started learning C+
 
 
 # Functions:
+- Allows the user to type in a Sudoku puzzle that is required to be tested to see if it is valid or not.
+- Returns the completed puzzle, output explaining the puzzle is invalid or output saying the puzzle can be completed depending on the options chosen by the user.
+
+
+# Upcoming changes:
+- Option for the completed puzzle to return all the possible valid solutions.
+- An easier interface for users to type in the Sudoku puzzle to be tested.
