@@ -9,38 +9,46 @@ void print(int arr[N][N])
 {
 	for (int i = 0; i < N; i++)
 	{
-		for (int j = 0; j < N; j++)
+		for (int j = 0; j < N; j++) {
 			cout << arr[i][j] << " ";
+		}
 		cout << endl;
 	}
 }
 
 // Checks if possible to assign num to the row, rol
-bool isSafe(int grid[N][N], int row,
-					int col, int num)
+bool isSafe(int grid[N][N], int row, int col, int num)
 {
 	
 	// Check to find num in same row
 	for (int x = 0; x <= 8; x++)
-		if (grid[row][x] == num)
+	{
+		if (grid[row][x] == num){
 			return false;
+		}
+	}
 
 	// Check to find num in same col
-	for (int x = 0; x <= 8; x++)
-		if (grid[x][col] == num)
+	for (int x = 0; x <= 8; x++) 
+	{
+		if (grid[x][col] == num){
 			return false;
+		}
+	}
 
 	// Check to find num in the same 3*3 matrix
-	int startRow = row - row % 3,
-			startCol = col - col % 3;
+	int startRow = row - row % 3;
+	int startCol = col - col % 3;
 
 	for (int i = 0; i < 3; i++)
+	{
 		for (int j = 0; j < 3; j++)
-			if (grid[i + startRow][j +
-							startCol] == num)
+		{
+			if (grid[i + startRow][j + startCol] == num){
 				return false;
-
-	// otherwise return true
+			}
+		}
+	}
 	return true;
 }
 
@@ -50,8 +58,9 @@ bool solveSuduko(int grid[N][N], int row, int col)
 {
 	// check we have reached the 8th row and 9th column to avoid
 	// further backtracking
-	if (row == N - 1 && col == N)
+	if (row == N - 1 && col == N){
 		return true;
+	}
 
 	// check if col value is 9, then we move to next row
 	if (col == N) {
@@ -61,8 +70,9 @@ bool solveSuduko(int grid[N][N], int row, int col)
 
 	// check if the current position of the grid already contains value > 0
     // iterate for next col
-	if (grid[row][col] > 0)
+	if (grid[row][col] > 0) {
 		return solveSuduko(grid, row, col + 1);
+	}
 
 	for (int num = 1; num <= N; num++)
 	{
@@ -74,8 +84,9 @@ bool solveSuduko(int grid[N][N], int row, int col)
 			grid[row][col] = num;
 		
 			// Checking for next possibility with next col
-			if (solveSuduko(grid, row, col + 1))
+			if (solveSuduko(grid, row, col + 1)) {
 				return true;
+			}
 		}
 	
 		// removing assigned num, and go with different num value 
@@ -98,10 +109,11 @@ int main()
 					{ 0, 0, 0, 0, 0, 0, 0, 7, 4 },
 					{ 0, 0, 5, 2, 0, 6, 7, 0, 0 } };
 
-	if (solveSuduko(grid, 0, 0))
+	if (solveSuduko(grid, 0, 0)) {
 		print(grid);
-	else
+	}
+	else {
 		cout << "A solution does not exist " << endl;
-
+	}
 	return 0;
 }
