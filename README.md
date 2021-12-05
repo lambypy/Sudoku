@@ -1,9 +1,11 @@
-# Sudoku Solver
+# Sudoku Solver 🧩
 
-Over the past few years, I have occasionally played Sudoku, whether it is through local newspapers or online. Repetition allowed me to complete medium puzzles in a quick time, and knowledge of patterns and techniques pushed me into completing hard puzzles. You can find a link here for daily puzzles to complete:
-https://www.nytimes.com/puzzles/sudoku/easy
+Over the past few years, I have occasionally played Sudoku, whether it is through local newspapers or online. Repetition allowed me to complete medium puzzles in a quick time, and knowledge of patterns and techniques pushed me into completing hard puzzles. You can find a [link](https://www.nytimes.com/puzzles/sudoku/easy) here for daily puzzles to complete:
 
-Further reading of online sudoku puzzles led me to some websites for user-generated sudoku puzzles. It was often difficult to know if these were actually solvable.
+> Our whole life is solving puzzles - Erno Rubik
+I find this quote to be interesting, as even the most simple task can be conceived as a puzzle. Yet repetition and basic understanding helps complete these tasks without much thought.
+
+This, was essentially my challenge for Sudoku puzzles. Logically, searching for more puzzles led me to some websites for user-generated sudoku puzzles. It was often difficult to know if these were actually solvable.
 Take this example below, how do we know that the Sudoku puzzle is solveable?
 
 
@@ -22,5 +24,5 @@ This was created in C++, for the simple fact that I recently started learning C+
 
 
 # Upcoming changes:
-- Option for the completed puzzle to return all the possible valid solutions.
-- An easier interface for users to type in the Sudoku puzzle to be tested.
+[] Option for the completed puzzle to return all the possible valid solutions.
+[] An easier interface for users to type in the Sudoku puzzle to be tested.
