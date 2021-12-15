@@ -18,16 +18,21 @@ So, today I decided to build a Sudoku solver to let me know if these puzzles are
 
 This was created in C++, for the simple fact that I recently started learning C++ and wanted to improve. 
 
-
 ## Features:
 - Allows the user to type in a Sudoku puzzle to see if it is valid or not.
 - Returns the completed puzzle, output explaining the puzzle is invalid or output saying the puzzle can be completed depending on the options chosen by the user.
 
+## Challenges:
+- This was one of the first projects I created with C++, although being very familiar with Python and OOP in general, adjusting the code to C++ was challenging in some areas.
 
 ## Upcoming changes:
 [] Option for the completed puzzle to return all the possible valid solutions.
 
 [] An easier interface for users to type in the Sudoku puzzle to be tested.
 
+## Languages and tools used:
+Created with C++
+
+------------------------------------------
 #### Date project started: 7th July 2021
 #### Date project finished: 10th July 2021 
