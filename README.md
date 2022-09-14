@@ -33,6 +33,3 @@ This was created in C++, for the simple fact that I recently started learning C+
 ## Languages and tools used:
 Created with C++
 
-------------------------------------------
-#### Date project started: 7th July 2021
-#### Date project finished: 10th July 2021 
